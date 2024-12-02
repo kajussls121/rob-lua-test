@@ -6,7 +6,7 @@ local urlpath_nds = urlroot .. "/nds.lua"
 -- Function to load and execute a script
 
 local function loadAndExecuteScript(filepath)
-    local scriptFunction, err = loadstring(game:HttpGet(filepath)
+    local scriptFunction, err = loadstring(game:HttpGet(filepath))
     if not scriptFunction then
         print("Error loading script: " .. err)
     else
