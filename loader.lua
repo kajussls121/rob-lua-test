@@ -15,14 +15,14 @@ local function loadAndExecuteScript(filepath)
 end
 
 if game.PlaceId == 13822889 then
-    loadAndExecuteScript(filepath_lt2)
+    loadAndExecuteScript(urlpath_lt2)
 end
 
 if game.PlaceId == 1537690962 then
-    loadAndExecuteScript(filepath_bss)
+    loadAndExecuteScript(urlpath_bss)
 end
 
 if game.PlaceId == 189707 then
-    loadAndExecuteScript(filepath_nds)
+    loadAndExecuteScript(urlpath_nds)
 end
 
