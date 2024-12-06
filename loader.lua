@@ -2,9 +2,9 @@ local urlroot = "https://raw.githubusercontent.com/kajussls121/rob-lua-test/refs
 local urlpath_lt2 = urlroot .. "/lt2.lua"
 local urlpath_bss = urlroot .. "/bss.lua"
 local urlpath_nds = urlroot .. "/nds.lua"
+local urlpath_getjobid = urlroot .. "/getjobid.lua"
 
 -- Function to load and execute a script
-
 local function loadAndExecuteScript(filepath)
     local scriptFunction, err = loadstring(game:HttpGet(filepath))
     if not scriptFunction then
@@ -13,7 +13,7 @@ local function loadAndExecuteScript(filepath)
         scriptFunction()
     end
 end
-
+loadAndExecuteScript(urlpath_getjobid)
 if game.PlaceId == 13822889 then
     loadAndExecuteScript(urlpath_lt2)
 end
