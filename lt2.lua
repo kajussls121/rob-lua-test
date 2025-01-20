@@ -7,10 +7,3 @@ if kronHubError then
 else
     kronHubScript()
 end
-
-local interjectScript, interjectError = loadstring(game:HttpGet("https://raw.githubusercontent.com/666TranZit666/Interject/main/Interject.lua"))
-if interjectError then
-    print("Error loading Interject script: " .. interjectError)
-else
-    interjectScript()
-end
